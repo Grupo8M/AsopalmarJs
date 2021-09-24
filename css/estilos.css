@@ -19,13 +19,26 @@
     color: white;
   }
   
-  .menu{
-    height: 80%;   
-    width: 160px;
-    position: absolute;
-    right:0;
+  .iniciar {
+    width: 150px;
+    background-color: #eee;
   }
 
+  .iniciar a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  .img {
+    position: absolute;
+    left: 300px;
+    width: 900px;
+    padding-top: 5px;
+    float: right;
+    top:70px;
+  }
 .formularios{
     position: absolute;
     right: 20px;

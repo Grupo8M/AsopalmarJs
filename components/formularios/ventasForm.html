@@ -4,8 +4,16 @@
 
 <form method="POST" action="#" target="_blank" action="/">
     <fieldset>
-    <label for="asociado">Identificacion Asociado</label>
-    <input type="text" name="asociado" id="asociado" placeholder="Identificacion Asociado">
+        <legend> Ventas Fruto: </legend>
+        <label for="TipoDoc">Ingrese Tipo de Documento:</label>
+        <select id="TipoDoc" name="TipoDoc">
+          <option value="CC">CC</option>
+          <option value="CE">CE</option>
+          <option value="AS">AS</option>
+          <option value="PE">PE</option>
+        </select> 
+        <label for="num_doc">Numero de Dcoumento</label>
+        <input type="number" name="num_doc" id="num_doc"> <br>
     <label for="pri_nom">Primer Nombre</label>
     <input type="text" name="pri_nom" id="pri_nom" placeholder="Primer Nombre">
     <label for="pri_nom">Segundo Nombre</label>
@@ -35,6 +43,7 @@
     <input type="number" name="ahorro" id="ahorro"> 
     <label for="subtotal">Subtotal</label>
     <input type="subtotal" name="subtotal" id="subtotal">
+
 </fieldset>
     <br>
     <input type="button" value="Nuevo">
