@@ -1,0 +1,49 @@
+.vertical-menu {
+    width: 200px;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .menu{
+    background-color: rgb(87, 184, 151);
+    height: 90%;    
+  }
+
+.menu2 {
+  background-color: rgb(27, 107, 80);
+  height: 90%;  
+  width: 350px;
+  position: relative;
+  left: 730px;
+  
+}
+
+
+  .inicio{
+    background-color: rgb(246, 247, 244);
+    width: 250px;
+    height: 180px;
+    border: 1px solid #99CC33
+    ;
+
+  }
+
+  h3{
+    color:rgb(97, 111, 122) ;
+    text-align: center;
+   }
