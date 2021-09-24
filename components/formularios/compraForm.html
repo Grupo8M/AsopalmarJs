@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compras</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header>
+<h1>MODULO COMPRAS</h1>
+</header>
+
+<form action="/">
+    <fieldset>
+     <legend>Datos Comprador:</legend>
+     <label for="NumCompra">Numero de Compra:</label>
+      <input type="number" id="NumCompra" name="NumCompra" disabled value="">
+      <label for="TipoDoc">Ingrese Documento:</label>
+      <select id="TipoDoc" name="TipoDoc">
+       <option value="CC">CC</option>
+       <option value="CE">CE</option>
+       <option value="AS">AS</option>
+       <option value="PE">PE</option>
+      </select>
+       <input type="number" id="NumDoc" name="NumDoc" value="">
+       <input type="button" value="...">
+    <label for="FechaCompra">FechaCompra</label>:</label>
+    <input type="datetime-local" id="FechaCompra" name="FechaCompra" value=""><br><br>
+    <label for="PNombre">Primer Nombre:</label>
+    <input type="text" id="PNombre" name="PNombre" value="">
+    <label for="SNombre">Segundo Nombre:</label>
+    <input type="text" id="SNombre" name="SNombre" value="">
+    <label for="PApellido">Primer Apellido:</label>
+    <input type="text" id="PApellido" name="PApellido" value="">
+    <label for="SApellido">Segundo Apellido:</label>
+    <input type="text" id="SApellido" name="SApellido" value=""><br><br>
+    
+    <fieldset>
+        <legend>Datos Compra:</legend>
+    <label for="CodInsumo">Codigo Insumo:</label>
+       <input type="number" id="CodInsumo" name="CodInsumo" value="">
+       <input type="button" value="...">
+    <label for="NomProducto">Descripcion:</label>
+    <input type="text" id="NomProducto" name="NomProducto" value="">
+    <label for="CantProducto">Cantidad:</label>
+    <input type="number" id="CantProducto" name="CantProducto" value="">
+    <label for="ValorInsumo">Valor Insumo:</label>
+    <input type="number" id="ValorInsumo" name="ValorInsumo" value="" disabled>
+    <br><br>
+    <label for="CodInsumo">Codigo Insumo:</label>
+       <input type="number" id="CodInsumo" name="CodInsumo" value="">
+       <input type="button" value="...">
+    <label for="NomProducto">Descripcion:</label>
+    <input type="text" id="NomProducto" name="NomProducto" value="">
+    <label for="CantProducto">Cantidad:</label>
+    <input type="number" id="CantProducto" name="CantProducto" value="">
+    <label for="ValorInsumo">Valor Insumo:</label>
+    <input type="number" id="ValorInsumo" name="ValorInsumo" value="" disabled>
+    <br><br>
+    <label for="CodInsumo">Codigo Insumo:</label>
+       <input type="number" id="CodInsumo" name="CodInsumo" value="">
+       <input type="button" value="...">
+    <label for="NomProducto">Descripcion:</label>
+    <input type="text" id="NomProducto" name="NomProducto" value="">
+    <label for="CantProducto">Cantidad:</label>
+    <input type="number" id="CantProducto" name="CantProducto" value="">
+    <label for="ValorInsumo">Valor Insumo:</label>
+    <input type="number" id="ValorInsumo" name="ValorInsumo" value="" disabled>
+    <input type="button" value="+"><br><br>
+    <label for="ValorTotal ">Valor Total Insumos:</label>
+    <input type="number" id="ValorTotal" name="ValorTotal" value="" disabled><br>
+
+    </fieldset><br>
+
+      </fieldset><br>
+      
+      <input type="button" value="Nuevo">
+      <input type="button" value="Guardar">
+      <input type="button" value="Modificar">
+      <input type="button" value="Buscar">
+      <input type="button" value="Eliminar">
+      <input type="button" value="Imprimir"/> 
+      <input type="reset" value="Limpiar"/>  
+  </form>
+  <br>
+
+  <fieldset>
+    <legend>Listado de Compras:</legend>
+    <br>
+    <table style="width:100%">
+    <label for="lblBuscarCompra">Buscar Compra:</label>
+    <input type="search" id="lblBuscarCompra" name="lblBuscarCompra" value="">
+    <label for="lblBuscarDoc">Buscar Comprador:</label>
+    <input type="search" id="lblBuscarDoc" name="lblBuscarDoc" value=""><br> <br>
+        <tr>
+          <th>Numero Compra</th>
+          <th>Numero Identificacion</th>
+          <th>Primer Nombre</th>
+          <th>Segundo Nombre</th>
+          <th>Primer Apellido</th>
+          <th>Segundo Apellido</th>
+          <th>Valor Compra</th>
+          <th>Fecha Compra</th>
+        </tr>
+        <tr>
+          <td>5525</td>  
+          <td>1065165985</td>
+          <td>Juan</td>
+          <td>Andres</td>
+          <td>Perez</td>
+          <td>Martinez</td>
+          <td>$584.000</td>
+          <td>28/06/2021</td>
+        </tr>
+        <tr>
+          <td>5526</td>  
+          <td>1065164485</td>
+          <td>Luis</td>
+          <td>Manuel</td>
+          <td>Vargas</td>
+          <td>Segura</td>
+          <td>$224.000</td>
+          <td>29/06/2021</td>
+        </tr>
+      </table>
+    </fieldset>
+
+</body>
+</html>

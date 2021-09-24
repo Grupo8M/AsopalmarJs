@@ -20,12 +20,24 @@
   }
   
   .menu{
-    background-color: rgb(87, 184, 151);
-    height: 90%;    
+    height: 80%;   
+    width: 160px;
+    position: absolute;
+    right:0;
   }
 
+.formularios{
+  
+    position: absolute;
+    right: 0px;
+    width: 1050px;
+    border: 3px solid #73AD21;
+    padding: 20px;
+    float: right;
+  
+}
 .menu2 {
-  background-color: rgb(27, 107, 80);
+  background-color: rgb(19, 100, 73);
   height: 90%;  
   width: 350px;
   position: relative;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Procesos Asopalmar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="facturación asopalmar, cuenta de cobros asopalmar">
+    <meta name="robots" content="index, follow">
+    <title> Factura </title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Archivo por definir-->
+</head>
+
+<body>
+    <!-- Ejemplo de una factura real. Los datos se pueden modificar o dejar en blanco para
+    tomarlos desde otros formularios-->
+    <header>
+        <h1>MÓDULO CUENTA DE COBRO</h1>
+    </header>
+
+    <fieldset>
+        <legend>CUENTA DE COBRO</legend>
+        <h3>Asociación de Palmeros de San Martín, Cesar</h3>
+        <h4>Nit 824.003.961-6</h4>
+
+        <hr>
+        <pre>
+    INFORMACIÓN DE FACTURA              INFORMACIÓN DE ASOCIADO
+
+    Número: 1208                            Documento: 1065165985
+    Fecha:  24 Sep 2021                     Nombre: Juan Andrés Pérez Martínez
+    Período: Mes de Agosto                  Teléfono: 3002536598</pre>
+        <hr>
+        <hr>
+        <h4>PAGOS</h4>
+        <pre> CONCEPTO                                          VALOR
+
+    Producido del               (10.000 Kg * 680) = $ 6.800.000
+    Mes (Kilos * Valor Kilo)
+
+    Subsidio de Transporte                          $ 12.000
+
+                                            TOTAL   $ 6.812.000</pre>
+        <hr>
+        <h4>DEDUCCIONES</h4>
+        <pre> CONCEPTO                                          VALOR
+
+    Descuentos               ($ 6.812.000 * 0,025) = $ 170.300
+    (2,5% del Valor Total)
+
+    Costos de Administración                         $ 250.000
+
+    Compras                                          $ 584.000
+
+    Prestamos (Cuota)                                $ 126.354
+
+    Ahorro (5% del Valor Total) ($ 6.812.000 * 0,05) $ 340.600
+
+    Otros                                            $ 320.000
+
+                                            TOTAL    $ 1.791.254</pre>
+        <hr>
+        <hr>
+        <h4>TOTAL</h4>
+        <pre>CONCEPTO                                          VALOR
+
+        Pagos                                     $ 6.812.000
+        Débitos                                   $ 1.791.254
+        
+        Neto a Pagar                              $ 5.020.746</pre>
+
+    </fieldset> <br>
+    <!-- Botones que puedan permitir realizar acciones con la factura-->
+    <input type="submit" value="Enviar">
+    <input type="button" value="Imprimir">
+
+</body>
+
+</html>

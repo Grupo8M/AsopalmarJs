@@ -1,0 +1,98 @@
+<!Doctype html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Contend-Type" content="text/html;charset=UFT-8">
+        <meta name="keywords" content="palma, Aspalmar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Provedores</title>
+    </head>
+    <body>
+    <header>
+        <h1>MODULO PROVEDORES</h1>
+    </header>
+        <form action="/">
+           <fieldset>
+                <legend>Datos Provedor:</legend>
+                <label for="TipoNit">Ingrese Referencia:</label>
+                <select id="TipoNit" name="TipoNit">
+                    <option value="SEL">Seleccione...</option>
+                    <option value="CC">Cedula Ciudadania</option>
+                    <option value="NIT">Nit</option>
+                    <option value="COD">Código</option>
+                </select>
+                <input type="number" id="TipoNit" name="TipoNit" value="">
+                <input type="button" value="Consultar">  <br><br>
+                <label for="Nombre">Nombre o Razón Social:</label>
+                <input type="text" id="Nombre" name="Nombre" value="">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" value="">
+                <label for="NumTelefono1">Teléfono 1:</label>
+                <input type="number" id="NumTelefono1" name="NumTelefono1" value="">
+                <label for="NumTelefono2">Teléfono 2:</label>
+                <input type="number" id="NumTelefono2" name="NumTelefono2" value=""><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" value="">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" value="">
+                <label for="Producto">Tipo Comercio:</label>
+                <select id="Producto" name="Producto">
+                    <option value="SEL">Seleccione...</option>
+                    <option value="PAQ">Productos Agro Químicos</option>
+                    <option value="CAR">Productos Mecanicos</option>
+                    <option value="CAR">Productos Carnicos</option>
+                    <option value="VER">Productos Supermercado</option>
+                </select>
+            </fieldset>  
+            <br><br>          
+            <input type="reset" value="Nuevo">
+            <input type="button" value="Crear">
+            <input type="button" value="Modificar">
+            <input type="button" value="Eliminar">  
+        </form>
+        <br><br>
+    <fieldset>
+       <form action="/">
+        <legend>Listado de Provedores:</legend>
+        <br>
+        <table style="width:100%">
+            <label for="lblBuscar">Buscar Referencia:</label>
+            <input type="search" id="lblBuscar" name="lblBuscar" value="">
+            <input type="button" value="Consultar">
+            <input type="reset" value="Limpiar"><br> <br>
+            <tr>
+                <th>Numero Referencia</th>
+                <th>Nombre o Razón Social</th>
+                <th>Dirección</th>
+                <th>Email</th>
+                <th>Telefono 1</th>
+                <th>Telefono 2</th>
+                <th>Ciudad</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><mark>830458960</mark></td>
+                <td><mark>AgroCampo SA</mark></td>
+                <td><mark>Calle 23 # 12 - 45</mark></td>
+                <td><mark>servicioalcliente@agrocampo.com</mark></td>
+                <td><mark>6078569513</mark></td>
+                <td><mark>3002536598</mark></td>
+                <td><mark>La Tebaida</mark></td>
+                <td><mark>Productos Agro Químicos</mark></td>
+            </tr>
+            <tr>
+                <td><mark>1065164485</mark></td>
+                <td><mark>Luis Vargas</mark></td>
+                <td><mark>Calle 1 # 11 - 10</mark></td>
+                <td><mark>@gmail.com</mark></td>
+                <td><mark>6092546321</mark></td>
+                <td><mark>3204866556</mark></td>
+                <td><mark>San Martin</mark></td>
+                <td><mark>Productos Carnicos</mark></td>
+            </tr>
+        </table>
+      </form>
+    </fieldset>
+    <br><br><hr>
+    <p title="Regresa a Menu Principal"><input type="submit" value="VOLVER"></p>   
+  </body>
+</html>

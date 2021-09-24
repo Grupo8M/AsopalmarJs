@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cuenta de Cobro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <h1>MÓDULO CUENTA DE COBRO</h1>
+  </header>
+
+  <fieldset>
+    <legend>CUENTA DE COBRO</legend>
+    <label for="cobro"> Número </label>
+    <input type="text" name="cobro" id="cobro" size="10" readonly>
+    <!--Campo de sólo lectura-->
+
+    <label for="date"> Fecha de Liquidación </label>
+    <input type="date" name="date" id="date" readonly>
+    <!--Campo de sólo lectura con la fecha del sistema-->
+
+    <label for="trans"> Transacción </label>
+    <select id="trans" name="trans">
+      <option>2021-Ene</option>
+      <option>2021-Feb</option>
+      <option>2021-Mar</option>
+      <option>2021-Abr</option>
+      <option>2021-May</option>
+      <option>2021-Jun</option>
+      <option>2021-Jul</option>
+      <option>2021-Ago</option>
+      <option selected>2021-Sep</option>
+      <option>2021-Oct</option>
+      <option>2021-Nov</option>
+      <option>2021-Dic</option>
+    </select>
+  </fieldset> <br><br>
+
+  <fieldset>
+    <!-- Cuando el admin ingrese el número de documento, el sistema deberá mostrar la información del asociado
+    extraída de la tabla asociados-->
+    <legend>ASOCIADO</legend>
+    <label for="id_asoc"> Ident. de Asociado</label>
+    <input list="id_asoc" name="id_asoc" minlength="7" maxlength="10" required autofocus autocomplete="on"> <br><br>
+    <datalist id="id_asoc">
+      <!-- El sistema irá guardando los documentos ingresados. Este es sólo de ejemplo-->
+      <option>1065165985</option>
+    </datalist>
+
+    <fieldset>
+      <legend>DATOS</legend>
+      <table style="width:100%">
+        <tr>
+          <th>Numero Identificacion</th>
+          <th>Primer Nombre</th>
+          <th>Segundo Nombre</th>
+          <th>Primer Apellido</th>
+          <th>Segundo Apellido</th>
+          <th>Telefono</th>
+          <th>Nombre Finca</th>
+          <th>Capacidad Finca</th>
+          <th>Inicio Siembra</th>
+        </tr>
+        <tr>
+          <td>1065165985</td>
+          <td>Juan</td>
+          <td>Andres</td>
+          <td>Perez</td>
+          <td>Martinez</td>
+          <td>3002536598</td>
+          <td>La Bonita</td>
+          <td>10 Hectareas</td>
+          <td>23/04/2010</td>
+      </table>
+    </fieldset> <br><br>
+
+    <!--Cuando el admin presione el enlace 'ver detalle' el sistema deberá cargar
+    el formulario donde se ingresaron los pagos y modificarlos (si quiere) allí, no acá-->
+    <fieldset>
+      <legend>PAGOS</legend>
+      <label for="pag_asoc"> Total a Pagar</label>
+      <input type="text" name="pag_asoc" id="pag_asoc" size="10" value="$ 6.812.000" readonly>
+      <a href="">ver detalle</a>
+    </fieldset> <br><br>
+
+    <!--Cuando el admin presione el enlace 'ver detalle' el sistema deberá cargar
+    el formulario donde se ingresaron los débitos y modificarlos (si quiere) allí, no acá-->
+    <fieldset>
+      <legend>DEDUCCIONES</legend>
+      <label for="cob_asoc"> Total a Debitar</label>
+      <input type="text" name="cob_asoc" id="cob_asoc" size="10" value="$ 2.410.900" readonly>
+      <a href="">ver detalle</a>
+    </fieldset> <br><br>
+
+    <!--El sistema debe realizar los cálculos correspondientes-->
+    <fieldset>
+      <legend>TOTAL</legend>
+      <label for="total_pagar"> Total a Pagar</label>
+      <input type="text" name="total_pagar" id="total_pagar" size="10" value="$ 4.401.100" readonly>
+    </fieldset>
+  </fieldset> <br>
+
+  <!--El sistema le permite al admin Generar, buscar, eliminar y/o crear una nueva.
+  Cuando ya haya generado una, el botón 'Generar' se debe desactivar hasta que el admin haya
+diligenciado el campo id_asociado y se debe desabilitar el botón 'Nueva'-->
+  <input type="button" value="Generar">
+  <input type="button" value="Nueva">
+  <input type="button" value="Buscar">
+  <input type="button" value="Eliminar">
+  </form>
+ 
+<!-- En este espacio se puede generar el llamado a cada formulario respectivo,
+es decir, cuando el admin quiera ver detalle de las deducciones al asociado, se
+puede mostrar aquí el resumen-->
+
+</body>
+
+</html>

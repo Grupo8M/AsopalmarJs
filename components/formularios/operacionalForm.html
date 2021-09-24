@@ -1,43 +1,48 @@
-<form method="POST" action="#" target="_blank">
+<header>
+    <h1>MODULO VENTAS FRUTO</h1>
+    </header>
 
+<form method="POST" action="#" target="_blank" action="/">
+    <fieldset>
     <label for="asociado">Identificacion Asociado</label>
     <input type="text" name="asociado" id="asociado" placeholder="Identificacion Asociado">
-
-    <label for="nom_asociado">Nombres</label>
+    <label for="pri_nom">Primer Nombre</label>
+    <input type="text" name="pri_nom" id="pri_nom" placeholder="Primer Nombre">
+    <label for="pri_nom">Segundo Nombre</label>
     <input type="text" name="nom_asociado" id="nom_asociado" placeholder="Nombres Asociado">
-
-    <label for="ape_asociado">Apellidos</label>
-    <input type="text" name="ape_asociado" id="ape_asociado" placeholder="Apellidos Asociado">
-    <br>
-        
+    <label for="pri_ape">Primer Apellido</label>
+    <input type="text" name="pri_ape" id="pri_ape" placeholder="Primer Apellido">
+    <label for="seg_ape">Segundo Apellido</label>
+    <input type="text" name="pri_ape" id="seg_ape" placeholder="Segundo Apellido">
+    <br>        
     <label for="fecha_entrega">Fecha de Entrega</label>
-    <input type="date" name="fecha_entrega" id="fecha_entrega" placeholder="Codigo de entrega">
+    <input type="date" name="fecha_entrega" id="fecha_entrega" >
     <label for="id_entrega">Codigo Entrega</label>
-    <input type="text" name="id_entrega" id="id_entrega" placeholder="Codigo de entrega">
-
-    <br>
+    <input type="text" name="id_entrega" id="id_entrega" placeholder="#001">
     <label for="cantidad_kilos">Cantidad Kilos</label>
     <input type="number" name="cantidad_kilos" id="cantidad_kilos">    
     <label for="valor_kilo">Valor Kilo</label>
     <input type="number" name="valor_kilo" id="valor_kilo">
-
-    <br>
     <label for="auxilio_transporte">Transporte</label>
     <label><input type="checkbox" id="cbox1" value="first_checkbox"> Si</label>
     <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">No</label>
+    <br>
     <label for="valor_transporte">   Valor de transporte</label>
     <input type="number" name="valor_transporte" id="valor_transporte">
     <label for="transporte">Auxilo de transporte</label>
     <input type="number" name="transporte" id="transporte" placeholder="12000">
-
-    <br>
     <label for="ahorro">Ahorro</label>
     <input type="number" name="ahorro" id="ahorro"> 
     <label for="subtotal">Subtotal</label>
     <input type="subtotal" name="subtotal" id="subtotal">
-    
+</fieldset>
     <br>
-    <button type="submit">Agregar informacion</button>
+    <input type="button" value="Nuevo">
+    <input type="button" value="Guardar">
+    <input type="button" value="Modificar">
+    <input type="button" value="Buscar">
+    <input type="button" value="Eliminar">
+    <input type="reset" value="Limpiar"/>  
     
 
 </form>

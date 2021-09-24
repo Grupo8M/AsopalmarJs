@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asociados</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=".../css/estilos.css"> 
+</head>
+<body>
+  <header>  
+    <h1>MODULO ASOCIADOS</h1>
+  </header>
+
+  <form action="/">
+    <fieldset>
+    <legend>Datos Asociado:</legend>
+    <label for="TipoDoc">Ingrese Documento:</label>
+    <select id="TipoDoc" name="TipoDoc">
+      <option value="CC">CC</option>
+      <option value="CE">CE</option>
+      <option value="AS">AS</option>
+      <option value="PE">PE</option>
+    </select>
+      <input type="number" id="NumDoc" name="NumDoc" value=""><br><br>
+      <label for="PNombre">Primer Nombre:</label>
+      <input type="text" id="PNombre" name="PNombre" value="">
+      <label for="SNombre">Segundo Nombre:</label>
+      <input type="text" id="SNombre" name="SNombre" value="">
+      <label for="PApellido">Primer Apellido:</label>
+      <input type="text" id="PApellido" name="PApellido" value="">
+      <label for="SApellido">Segundo Apellido:</label>
+      <input type="text" id="SApellido" name="SApellido" value=""><br><br>
+      <label for="NumTelefono">Telefono:</label>
+      <input type="number" id="NumTelefono" name="NumTelefono" value="">
+      <label for="NomFinca">Nombre de la Finca:</label>
+      <input type="text" id="NomFinca" name="NomFinca" value="">
+      <label for="CapFinca">Capacidad de la Finca:</label>
+      <input type="text" id="CapFinca" name="CapFinca" value="">
+      <label for="InSiembra">Inicio de Siembra:</label>
+      <input type="date" id="InSiembra" name="InSiembra" value="">
+      </fieldset><br>
+     
+      <input type="button" value="Nuevo">
+      <input type="button" value="Guardar">
+      <input type="button" value="Modificar">
+      <input type="button" value="Buscar">
+      <input type="button" value="Eliminar">
+      <input type="reset" value="Limpiar"/>  
+  </form>
+  <br><br>
+
+  <fieldset>
+  <legend>Listado de Asociados:</legend>
+  <br>
+  <table style="width:100%">
+  <label for="lblBuscar">Buscar Documento:</label>
+  <input type="search" id="lblBuscar" name="lblBuscar" value=""><br> <br>
+      <tr>
+        <th>Numero Identificacion</th>
+        <th>Primer Nombre</th>
+        <th>Segundo Nombre</th>
+        <th>Primer Apellido</th>
+        <th>Segundo Apellido</th>
+        <th>Telefono</th>
+        <th>Nombre Finca</th>
+        <th>Capacidad Finca</th>
+        <th>Inicio Siembra</th>
+      </tr>
+      <tr>
+        <td>1065165985</td>
+        <td>Juan</td>
+        <td>Andres</td>
+        <td>Perez</td>
+        <td>Martinez</td>
+        <td>3002536598</td>
+        <td>La Bonita</td>
+        <td>10 Hectareas</td>
+        <td>23/04/2010</td>
+      </tr>
+     <tr>
+        <td>1065164485</td>
+        <td>Luis</td>
+        <td>Manuel</td>
+        <td>Vargas</td>
+        <td>Segura</td>
+        <td>3004866511</td>
+        <td>La Maria</td>
+        <td>5 Hectareas</td>
+        <td>05/08/2012</td>
+      </tr>
+    </table>
+  </fieldset>
+
+</body>
+</html>
