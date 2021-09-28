@@ -3,6 +3,15 @@
   width: 200px;
 }
 
+header{
+  width: 100%;
+  background-color: aqua;
+  color: #04AA6D;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
 .vertical-menu a {
   background-color: #eee;
   color: black;
@@ -66,10 +75,10 @@
   background-color: rgb(19, 100, 73);
   height: 90%;  
   width: 120px;
-  position: relative;
-  left: 730px;
-  top: 340px;
-  
+  padding-right: 10px;
+  position: fixed;
+  left: 0;
+  top: 0; 
 }
 
 ul {
@@ -89,14 +98,14 @@ li a {
   background-color: #04AA6D;
 }
 
-
   .inicio{
     background-color: #ffffff;
     width: 250px;
     height: 180px;
-    border: 1px solid #99CC33;
     position: absolute;
-    left: 950px;
+    right: 0%;
+    top:160px;
+  
 
   }
   .bienv{

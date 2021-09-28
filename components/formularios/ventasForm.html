@@ -12,8 +12,8 @@
           <option value="AS">AS</option>
           <option value="PE">PE</option>
         </select> 
-        <label for="num_doc">Numero de Dcoumento</label>
-        <input type="number" name="num_doc" id="num_doc"> <br>
+        <label for="num_doc">Numero de Documento</label>
+        <input type="number" name="num_doc" id="num_doc"> <br> <br>
     <label for="pri_nom">Primer Nombre</label>
     <input type="text" name="pri_nom" id="pri_nom" placeholder="Primer Nombre">
     <label for="pri_nom">Segundo Nombre</label>
@@ -22,7 +22,7 @@
     <input type="text" name="pri_ape" id="pri_ape" placeholder="Primer Apellido">
     <label for="seg_ape">Segundo Apellido</label>
     <input type="text" name="pri_ape" id="seg_ape" placeholder="Segundo Apellido">
-    <br>        
+    <br><br>        
     <label for="fecha_entrega">Fecha de Entrega</label>
     <input type="date" name="fecha_entrega" id="fecha_entrega" >
     <label for="id_entrega">Codigo Entrega</label>
@@ -34,7 +34,7 @@
     <label for="auxilio_transporte">Transporte</label>
     <label><input type="checkbox" id="cbox1" value="first_checkbox"> Si</label>
     <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">No</label>
-    <br>
+    <br><br>
     <label for="valor_transporte">   Valor de transporte</label>
     <input type="number" name="valor_transporte" id="valor_transporte">
     <label for="transporte">Auxilo de transporte</label>
@@ -53,5 +53,48 @@
     <input type="button" value="Eliminar">
     <input type="reset" value="Limpiar"/>  
     
+<br><br>
+<fieldset>
+    <legend>Registro de ventas:</legend>
+    <br>
+    <table style="width:100%">
+    <label for="lblBuscar">Buscar Documento:</label>
+    <input type="search" id="lblBuscar" name="lblBuscar" value=""><br> <br>
+        <tr>
+          <th>Numero Identificacion</th>
+          <th>Primer Nombre</th>
+          <th>Segundo Nombre</th>
+          <th>Primer Apellido</th>
+          <th>Segundo Apellido</th>
+          <th>Fecha entrega</th>
+          <th>Codigo Entrega</th>
+          <th>Cantidad Kilos</th>
+          <th>Valor Kilo</th>
+        </tr>
+        <tr>
+          <td>1065165985</td>
+          <td>Juan</td>
+          <td>Andres</td>
+          <td>Perez</td>
+          <td>Martinez</td>
+          <td>28/09/2021</td>
+          <td>0003</td>
+          <td>10</td>
+          <td>600000</td>
+        </tr>
+        <tr>
+            <td>1065165985</td>
+            <td>Juan</td>
+            <td>Andres</td>
+            <td>Perez</td>
+            <td>Martinez</td>
+            <td>28/09/2021</td>
+            <td>0003</td>
+            <td>10</td>
+            <td>600000</td>
+          </tr>
+       
+      </table>
+    </fieldset>
 
 </form>

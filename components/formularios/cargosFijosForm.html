@@ -5,8 +5,8 @@
 <form method="POST" action="#" target="_blank" action="/">
     <fieldset>
         <legend> Cargos Fijos:: </legend>
-            <label for="id_trans">Número de Transacción</label><br>
-            <input type="number" name="id_trans" id="id_trans"> 
+            <label for="id_trans">Número de Transacción</label>
+            <input type="number" name="id_trans" id="id_trans"> <br><br>
             <label for="ab_gerente">Abono Gerente</label>
             <input type="number" name="ab_gerente" id="ab_gerente">
             <label for="ab_contador">Abono Contador</label>
@@ -14,8 +14,8 @@
             <label for="ab_mensual">Abono Mensual</label>
             <input type="number" name="ab_mensual" id="ab_mensual">
             <label for="ab_asesoria">Abono Asesoria</label>
-            <input type="number" name="ab_asesoria" id="ab_asesoria">
-            <label for="ab_sanidad">Abono Sanidad</label>
+            <input type="number" name="ab_asesoria" id="ab_asesoria"><br> <br>
+            <label for="ab_sanidad">Abono Sanidad</label> 
             <input type="number" name="ab_sanidad" id="ab_sanidad">
             <label for="retefuente">Retefuente</label>
             <input type="number" name="retefuente" id="retefuente">
@@ -23,7 +23,7 @@
             <input type="number" name="cheque" id="cheque">
             <label for="cxmil">Cuatro por Mil</label>
             <input type="number" name="cxmil" id="cxmil">
-    <br>        
+    <br>        <br>
     
 
 </fieldset>
@@ -34,6 +34,37 @@
     <input type="button" value="Buscar">
     <input type="button" value="Eliminar">
     <input type="reset" value="Limpiar"/>  
-    
+    <br><br>
+    <fieldset>
+        <legend>Cargos fijos:</legend>
+        <br>
+        <table style="width:100%">
+        <label for="lblBuscar">Numero de Transaccion:</label>
+        <input type="search" id="lblBuscar" name="lblBuscar" value=""><br> <br>
+            <tr>
+              <th>Abono gerente</th>
+              <th>Abono contador</th>
+              <th>Abono mensual</th>
+              <th>Abono asesoría</th>
+              <th>Abono sanidad</th>
+              <th>Retefuente</th>
+              <th>Descuento cheque</th>
+              <th>4 x 1000</th>
+            </tr>
+            <tr>
+             
+              <td>16000</td>
+              <td>13000</td>
+              <td>5%</td>
+              <td>20000</td>
+              <td>3002536598</td>
+              <td>30000</td>
+              <td>6000</td>
+              <td>1*100</td>
+            </tr>
+          </table>
+        </fieldset>
+
+
 
 </form>
