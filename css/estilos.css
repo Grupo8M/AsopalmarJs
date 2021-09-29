@@ -1,15 +1,8 @@
+*{
+  margin: 0%;}
 
 .vertical-menu {
   width: 200px;
-}
-
-header{
-  width: 100%;
-  background-color: aqua;
-  color: #04AA6D;
-  position: fixed;
-  top:0;
-  left:0;
 }
 
 .vertical-menu a {
@@ -28,21 +21,7 @@ header{
   background-color: #04AA6D;
   color: white;
 }
-  .iniciar {
-    width: 150px;
-    height: 38px;
-    background-color: rgba(245, 248, 245, 0.548);
-  }
 
-  .iniciar a {
-    background-color: #bcc2b7a8;
-    color: black;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    height: 5px;
-    width: 90px;
-  }
   .img {
     position: absolute;
     left: 300px;
@@ -71,8 +50,26 @@ header{
   float: right;
   top:70px;
 }
+
+.nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;}
+
+.nav li{
+  display:block;
+  height: 50px;
+  padding:15px;
+  padding-left: 30px;
+  padding-right: 20px;
+}  
+
+
 .menu {
-  background-color: rgb(19, 100, 73);
+  background-color:rgba(0,0,0,0.5) !important;
   height: 50px;  
   width: 100%;
   padding-right: 10px;
@@ -104,19 +101,92 @@ opacity: 0.5;
 }
 
 
-  .inicio{
-    background-color: #ffffff;
-    width: 250px;
-    height: 180px;
-    position: absolute;
-    right: 0%;
-    top:160px;
-  
+@import url('https://fonts.googleapis.com/css?family=Numans');
 
-  }
-  .bienv{
-    position: absolute;
-    text-align: center;
-  }
+.inicio{
+background-image: url('../img/pic1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 550px;
+margin-top: 120px;
+margin-left: 300px;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.form-group a{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
 
  

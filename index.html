@@ -9,21 +9,54 @@
     <meta name="keywords" content="palma africana, palma aceite">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/estilos.css">  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <body>
-    <div >
-      <div>
-      <iframe src="./layouts/navigator.html" frameborder="0" width="100%" height="50px"></iframe>
-      </div> 
-      <div class="bienv">
-      <p>
-       <img src="./img/logo.png" alt="">
-      </p>
-    </div>
-      <div class="inicio">
+
+  <body class="inicio">
+
+    <div class="container">
+
+      <div class="d-flex justify-content-rigth h-100">
+        <div class="card">
+          <div class="card-header">
+            <img src="../asopalmar_v1/img/Logo_Asopalmar.svg" alt="">
+            
+            <h3>Iniciar Sesion</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"> </i> </span>
+                </div>
+                <input type="usuario" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-key"> </i> </span>
+                </div>
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <div class="row align-items-center remember">
+                <input type="checkbox"> Recordar nombre de usuario 
+              </div> <br>
+              <div class="form-group">
+                <a role="button" href="../asopalmar_v1/pages/operacional.html" class="flex-fill btn btn-primary"> Ingresar</a>               
+              </div>
+            </form>
+          </div>  
+          <div class="card-footer">
+            <div class="d-flex justify-content-center links">
+              No tienes Cuenta? <a href="#">Registrate </a>
+            </div>
+            <div class="d-flex justify-content-center links">
+              Olvidaste tu contraseña? <a href="#">Recordar Contraseña</a>
+            </div>
+
+          </div>
  
-        <iframe src="./components/formularios/loginForm.html" frameborder="0" width="100%" height="260px"></iframe>
-      </div>
+    
      
   </body>
 </html>
