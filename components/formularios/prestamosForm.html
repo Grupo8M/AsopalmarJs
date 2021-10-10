@@ -1,156 +1,303 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Prestamos</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prestamos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!--link rel="stylesheet" href=".../css/estilos.css"-->
+  <link rel="stylesheet" href="../../css/formstyle.css">
+  <!-- BOX ICONS CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
+<header>
+
+
+  <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-6">
+            <h1 class="m-0">
+              <i class='bx bx-dollar'></i>
+              Modulo Prestamos
+            </h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active">Prestamos</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+
+
+</header>
+
 <body>
 
-    <header>
-        <h1>MODULO PRESTAMOS</h1>
-    </header>
+  <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <fieldset class="scheduler-border">
+      <form class="row g-4">
+        <div class="mb-3 col-auto">
+          <label for="disabledId_transaccion" class="form-label">Codigo de Prestamo</label>
+          <input type="text" class="form-control" id="disabledId_transaccion" disabled>
+        </div>
+        <div class="mb-3 col-2">
+          <label for="FechaPrestamo" class="form-label">Fecha de Prestamo</label>
+          <input type="date" class="form-control mb-2" id="FechaPrestamo">
+        </div>
+        <div class="row g-2">
+          <div class="mb-3 col-1">
+            <label for="exampleInputEmail1" class="form-label">Tipo Doc</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected> Seleccione Tipo Id</option>
+              <option value="1">CC</option>
+              <option value="2">CE</option>
+              <option value="3">AS</option>
+              <option value="4">PE</option>
+            </select>
+          </div>
+          <div class="mb-3 col-2">
+            <label for="IdDocumento" class="form-label">N° Identificacion</label>
+            <div class="input-group mb-2">
+              <input type="number" class="form-control  id=" IdUsuario placeholder="Ingrese Numero de Documento">
+              <span class="input-group-btn">
+                <button id="autocargar" class="btn btn-dark" type="button">
+                  ...
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class="mb-3 col-2">
+            <label for="PNombre" class="form-label">Primer Nombre</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese Primer Nombre" id="PNombre">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="SNombre" class="form-label">Segundo Nombre</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese Segundo Nombre" id="SNombre">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="PApellido" class="form-label">Primer Apellido</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese Primer Apellido" id="PApellido">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="SApellido" class="form-label">Segundo Apellido</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese Segundo Apellido" id="SApellido">
+          </div>
+        </div>
+        <div class="row g-1">
+          <div class="mb-3 col-auto">
+            <label for="v_prestamo" class="form-label">Valor prestamo</label>
+            <input type="number" class="form-control mb-2" id="v_prestamo">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="t_prestamo" class="form-label">Tiempo prestamo</label>
+            <input type="number" class="form-control mb-2" id="t_prestamo">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="i_anual" class="form-label">Interes anual</label>
+            <input type="number" class="form-control mb-2" id="i_anual">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="i_mensual" class="form-label">Interes mensual</label>
+            <div class="input-group mb-2">
+              <input type="number" class="form-control" id="i_mensual" placeholder="">
+              <button id="autocargar" class="btn btn-primary" type="button">
+                Calcular
+              </button>
 
-    <form action="/">
-        <fieldset>
-         <legend>Datos Deudor:</legend>
-         <label for="NumPrestamo">Numero de Prestamo:</label>
-          <input type="number" id="NumPrestamo" name="NumPrestamo" disabled value="">
-          <label for="TipoDoc">Ingrese Documento:</label>
-          <select id="TipoDoc" name="TipoDoc">
-            <option value="CC">Cedula Ciudadania</option>
-            <option value="CE">Cedula Extranjeria</option>
-            <option value="AS">Adullto Sin Identificacion</option>
-            <option value="PE">Permanencia Especial</option>
-          </select>
-           <input type="number" id="NumDoc" name="NumDoc" value="">
-           <input type="button" value="...">
-        <label for="FechaPrestamo">Fecha Prestamo</label>:</label>
-        <input type="datetime-local" id="FechaPrestamo" name="FechaPrestamo" value=""><br><br>
-        <label for="PNombre">Primer Nombre:</label>
-        <input type="text" id="PNombre" name="PNombre" value="">
-        <label for="SNombre">Segundo Nombre:</label>
-        <input type="text" id="SNombre" name="SNombre" value="">
-        <label for="PApellido">Primer Apellido:</label>
-        <input type="text" id="PApellido" name="PApellido" value="">
-        <label for="SApellido">Segundo Apellido:</label>
-        <input type="text" id="SApellido" name="SApellido" value=""><br><br>
-        
-        <fieldset>
-            <legend>Datos Prestamo:</legend>
-            <label for="ValorPrestamo">Valor Prestamo:</label>
-            <input type="number" id="ValorPrestamo" name="ValorPrestamo" value="">
-            <label for="TPrestamo">Tiempo Prestamo</label>:</label>
-          <input type="number" id="TPrestamo" name="TPrestamo" value="">
-          <label for="IntAnual">Interes Anual</label>:</label>
-          <input type="number" id="IntAnual" name="IntAnual" value="">
-          <input type="button" value="Calcular"><br><br>
-          <label for="IntMensual">Interes Mensual</label>:</label>
-          <input type="number" id="IntMensual" name="IntMensual" value="" disabled>
-          <label for="ValorCuota">Valor Cuota:</label>
-          <input type="number" id="ValorCuota" name="ValorCuota" value="" disabled><br><br>
-           
-
-          <fieldset>
-           <legend>Valor Cuotas Prestamo:</legend>
-           <table style="width:100%">
-           <tr>
-            <th>Numero Cuota</th>
-            <th>Valor Cuota</th>
-            <th>Valor Intereses</th>
-            <th>Amortizacion</th>
-            <th>Saldo Pendiente</th>
-          </tr>
-          <tr>
-            <td>1</td>  
-            <td>$125.521,27</td>
-            <td>$833,33</td>
-            <td>$124.687,93</td>
-            <td>$375.312,07</td>
-          </tr>
-          <tr>
-            <td>2</td>  
-            <td>$125.521,27</td>
-            <td>$625,52</td>
-            <td>$124.895,75</td>
-            <td>$250.416,32</td>
-          </tr>
-          <tr>
-            <td>3</td>  
-            <td>$125.521,27</td>
-            <td>$417,36</td>
-            <td>$125.103,91</td>
-            <td>$125.312,41</td>
-          </tr>
-          <tr>
-            <td>4</td>  
-            <td>$125.521,27</td>
-            <td>$208,85</td>
-            <td>$125.312,41</td>
-            <td>$0.00</td>
-          </tr>
-         
-           </table>
-          </fieldset>
-    
-        </fieldset><br>
-    
-          </fieldset><br>
-          
-          <input type="button" value="Nuevo">
-          <input type="button" value="Guardar">
-          <input type="button" value="Modificar">
-          <input type="button" value="Buscar">
-          <input type="button" value="Eliminar">
-          <input type="button" value="Imprimir"/> 
-          <input type="reset" value="Limpiar"/>  
-
-
-      </form><br><br>
-
-      <fieldset>
-        <legend>Listado de Compras:</legend>
+            </div>
+          </div>
+        </div>
+      </fieldset>
         <br>
-        <table style="width:100%">
-        <label for="lblBuscarPrestamo">Buscar Compra:</label>
-        <input type="search" id="lblBuscarPrestamo" name="lblBuscarPrestamo" value="">
-        <label for="lblBuscarDoc">Buscar Asociado:</label>
-        <input type="search" id="lblBuscarDoc" name="lblBuscarDoc" value=""><br> <br>
-            <tr>
-              <th>Numero Prestamo</th>
-              <th>Numero Identificacion</th>
-              <th>Primer Nombre</th>
-              <th>Segundo Nombre</th>
-              <th>Primer Apellido</th>
-              <th>Segundo Apellido</th>
-              <th>Valor Prestamo</th>
-              <th>Interes Prestamo</th>
-              <th>Fecha Prestamo</th>
-            </tr>
-            <tr>
-              <td>1011</td>  
-              <td>1065165985</td>
-              <td>Juan</td>
-              <td>Andres</td>
-              <td>Perez</td>
-              <td>Martinez</td>
-              <td>$694.000</td>
-              <td>2.5%</td>
-              <td>30/07/2021</td>
-            </tr>
-            <tr>
-              <td>1012</td>  
-              <td>1065164485</td>
-              <td>Luis</td>
-              <td>Manuel</td>
-              <td>Vargas</td>
-              <td>Segura</td>
-              <td>$224.000</td>
-              <td>2.5%</td>
-              <td>13/08/2021</td>
-            </tr>
-          </table>
-        </fieldset>
+      </form>
+
+      <fieldset class="scheduler-border">
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <div class="row g-4">
+            <div class="mb-1 col-2">
+              <label for="i_mensual" class="form-label">Interes Mensual</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" id="i_mensual" aria-label="Amount (to the nearest dollar)"
+                  disabled>
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+            <div class="mb-1 col-2">
+              <label for="v_cuota" class="form-label">Valor Cuota</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" id="v_cuota" aria-label="Amount (to the nearest dollar)"
+                  disabled>
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-header">
+            <span><i class="bi bi-table me-2"></i></span> Valor cuotas prestamo
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="example" class="table table-striped data-table" style="width: 100%">
+                <thead>
+                  <tr>
+                    <th>Numero prestamo</th>
+                    <th>Valor cuota</th>
+                    <th>Valor Intereses</th>
+                    <th>Amortizacion</th>
+                    <th>Saldo pendiente</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>C001</td>
+                    <td>2000000</td>
+                    <td>833.33</td>
+                    <td>124000</td>
+                    <td>1500000</td>
+                  </tr>
+                  <tr>
+                    <td>C001</td>
+                    <td>2000000</td>
+                    <td>833.33</td>
+                    <td>124000</td>
+                    <td>1500000</td>
+                  </tr>
+                </tbody>
+                <td>C001</td>
+                <td>2000000</td>
+                <td>833.33</td>
+                <td>124000</td>
+                <td>1500000</td>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset><br>
+
+    <form class="row g-2">
+      <div class="col-auto">
+        <button type="button" onclick='nuevo()' class="btn btn-primary">Nuevo</button>        
+        <script>
+          function nuevo() {
+            alert("Ingresar registro");
+          }
+          </script>
+
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='guardar()' class="btn btn-primary">Guardar</button>
+        <script>
+          function guardar() {
+            alert("Guardar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='modificar()' class="btn btn-primary">Modificar</button>
+        <script>
+          function modificar() {
+            alert("Modificar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='buscar()' class="btn btn-primary">Buscar</button>
+        <script>
+          function buscar() {
+            alert("Buscar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='eliminar()' class="btn btn-primary">Eliminar</button>
+        <script>
+          function eliminar() {
+            alert("Eliminar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='myFunction()' class="btn btn-primary">Limpiar</button>
+        <script>
+          function myFunction() {
+            alert("Limpiar registro");
+          }
+          </script>
+      </div>
+    </form>
+      <br>
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <div class="card-header">
+            <span><i class="bi bi-table me-2"></i></span> Listado prestamos
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="example" class="table table-striped data-table" style="width: 100%">
+                <thead>
+                  <tr>
+                    <th>Codigo prestamo</th>
+                    <th>Numero identificacion</th>
+                    <th>Primer nombre</th>
+                    <th>Segundo nombre</th>
+                    <th>Primer apellido</th>
+                    <th>Segundo apellido</th>
+                    <th>Valor prestamo</th>
+                    <th>Interes prestamo </th>
+                    <th>Fecha prestamo </th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>C001</td>
+                    <td>92847284738</td>
+                    <td>Juan</td>
+                    <td></td>
+                    <td>Lopez</td>
+                    <td>Robles</td>
+                    <td>12000</td>
+                    <td>33</td>
+                    <td>01/07/2021</td>
+                  </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  </div>
+  </div>
+
+
+
 
 </body>
+
+
+
+
+
+
+
+
+
 </html>

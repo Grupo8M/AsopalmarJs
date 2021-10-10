@@ -1,95 +1,247 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Asociados</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href=".../css/estilos.css"> 
+
+  <title>Asociados</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!--link rel="stylesheet" href=".../css/estilos.css"-->
+  <link rel="stylesheet" href="../../css/formstyle.css">
+  <!-- BOX ICONS CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
+
+<header>
+  <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-6">
+            <h1 class="m-0">
+              <i class="bx bx-user-check"></i>
+              Modulo Asociados
+            </h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active">Asociados</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+
+</header>
+
+
 <body>
-  <header>  
-    <h1>MODULO ASOCIADOS</h1>
-  </header>
 
-  <form action="/">
-    <fieldset>
-    <legend>Datos Asociado:</legend>
-    <label for="TipoDoc">Ingrese Documento:</label>
-    <select id="TipoDoc" name="TipoDoc">
-      <option value="CC">CC</option>
-      <option value="CE">CE</option>
-      <option value="AS">AS</option>
-      <option value="PE">PE</option>
-    </select>
-      <input type="number" id="NumDoc" name="NumDoc" value=""><br><br>
-      <label for="PNombre">Primer Nombre:</label>
-      <input type="text" id="PNombre" name="PNombre" value="">
-      <label for="SNombre">Segundo Nombre:</label>
-      <input type="text" id="SNombre" name="SNombre" value="">
-      <label for="PApellido">Primer Apellido:</label>
-      <input type="text" id="PApellido" name="PApellido" value="">
-      <label for="SApellido">Segundo Apellido:</label>
-      <input type="text" id="SApellido" name="SApellido" value=""><br><br>
-      <label for="NumTelefono">Telefono:</label>
-      <input type="number" id="NumTelefono" name="NumTelefono" value="">
-      <label for="NomFinca">Nombre de la Finca:</label>
-      <input type="text" id="NomFinca" name="NomFinca" value="">
-      <label for="CapFinca">Capacidad de la Finca:</label>
-      <input type="text" id="CapFinca" name="CapFinca" value="">
-      <label for="InSiembra">Inicio de Siembra:</label>
-      <input type="date" id="InSiembra" name="InSiembra" value="">
-      </fieldset><br>
-     
-      <input type="button" value="Nuevo">
-      <input type="button" value="Guardar">
-      <input type="button" value="Modificar">
-      <input type="button" value="Buscar">
-      <input type="button" value="Eliminar">
-      <input type="reset" value="Limpiar"/>  
-  </form>
-  <br><br>
+  <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <fieldset class="scheduler-border">
+      <form class="row g-2">
+        <div class="mb-3 col-1">
+          <label for="exampleInputEmail1" class="form-label">Tipo Doc</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected> Seleccione Tipo Id</option>
+            <option value="1">CC</option>
+            <option value="2">CE</option>
+            <option value="3">AS</option>
+            <option value="4">PE</option>
+          </select>
+        </div>
+        <div class="mb-3 col-auto">
+          <label for="IdDocumento" class="form-label">Numero Identificacion</label>
+          <input type="number" class="form-control" placeholder="Ingrese Numero de Documento" id="IdDocumento">
+        </div>
+        <div class="mb-3 col-auto">
+          <label for="PNombre" class="form-label">Primer Nombre</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Primer Nombre" id="PNombre">
+        </div>
+        <div class="mb-3 col-auto">
+          <label for="SNombre" class="form-label">Segundo Nombre</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Segundo Nombre" id="SNombre">
+        </div>
+        <div class="mb-3 col-auto">
+          <label for="PApellido" class="form-label">Primer Apellido</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Primer Apellido" id="PApellido">
+        </div>
+        <div class="mb-3 col-auto">
+          <label for="SApellido" class="form-label">Segundo Apellido</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Segundo Apellido" id="SApellido">
+        </div>
+        <div class="mb-3 col-3">
+          <label for="Telefono" class="form-label">Telefono</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Numero Telefonico" id="Telefono">
+        </div>
+        <div class="mb-3 col-3">
+          <label for="NomFinca" class="form-label">Nombre de la Finca</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Nombre de la Finca" id="NomFinca">
+        </div>
+        <div class="mb-3 col-3">
+          <label for="CapFinca" class="form-label">Capacidad de la Finca</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Capacidad de la Finca" id="CapFinca">
+        </div>
+        <div class="mb-3 col-3">
+          <label for="InSiembra" class="form-label">Inicio de la Siembra</label>
+          <input type="date" class="form-control mb-2" placeholder="Ingrese Fecha de Inicio de Siembra" id="InSiembra">
+        </div>
 
-  <fieldset>
-  <legend>Listado de Asociados:</legend>
-  <br>
-  <table style="width:100%">
-  <label for="lblBuscar">Buscar Documento:</label>
-  <input type="search" id="lblBuscar" name="lblBuscar" value=""><br> <br>
-      <tr>
-        <th>Numero Identificacion</th>
-        <th>Primer Nombre</th>
-        <th>Segundo Nombre</th>
-        <th>Primer Apellido</th>
-        <th>Segundo Apellido</th>
-        <th>Telefono</th>
-        <th>Nombre Finca</th>
-        <th>Capacidad Finca</th>
-        <th>Inicio Siembra</th>
-      </tr>
-      <tr>
-        <td>1065165985</td>
-        <td>Juan</td>
-        <td>Andres</td>
-        <td>Perez</td>
-        <td>Martinez</td>
-        <td>3002536598</td>
-        <td>La Bonita</td>
-        <td>10 Hectareas</td>
-        <td>23/04/2010</td>
-      </tr>
-     <tr>
-        <td>1065164485</td>
-        <td>Luis</td>
-        <td>Manuel</td>
-        <td>Vargas</td>
-        <td>Segura</td>
-        <td>3004866511</td>
-        <td>La Maria</td>
-        <td>5 Hectareas</td>
-        <td>05/08/2012</td>
-      </tr>
-    </table>
-  </fieldset>
+      </form>
+    </fieldset>
+    <br>
+
+    <form class="row g-2">
+      <div class="col-auto">
+        <button type="button" onclick='nuevo()' class="btn btn-primary">Nuevo</button>        
+        <script>
+          function nuevo() {
+            alert("Ingresar registro");
+          }
+          </script>
+
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='guardar()' class="btn btn-primary">Guardar</button>
+        <script>
+          function guardar() {
+            alert("Guardar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='modificar()' class="btn btn-primary">Modificar</button>
+        <script>
+          function modificar() {
+            alert("Modificar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='buscar()' class="btn btn-primary">Buscar</button>
+        <script>
+          function buscar() {
+            alert("Buscar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='eliminar()' class="btn btn-primary">Eliminar</button>
+        <script>
+          function eliminar() {
+            alert("Eliminar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='myFunction()' class="btn btn-primary">Limpiar</button>
+        <script>
+          function myFunction() {
+            alert("Limpiar registro");
+          }
+          </script>
+      </div>
+    </form>
+
+
+
+    <br>
+    <br>
+
+
+    <fieldset class="scheduler-border"><br>
+      <div class="row g-2">
+        <div class="mb-1 col-4">
+          <div class="input-group mb-3">
+            <button class="btn btn-primary" type="button" id="button-addonaddon1"><i class='bx bx-search'></i></button>
+            <input type="text" class="form-control" placeholder="Busqueda por N° de Identificacion">
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <div class="card">
+            <div class="card-header">
+              <span> <i class="bx bx-user-check"></i></span> Listado Asociados
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="example" class="table table-striped data-table" style="width: 100%">
+                  <thead>
+                    <tr>
+                      <th>Numero Identificacion</th>
+                      <th>Primer Nombre</th>
+                      <th>Segundo Nombre</th>
+                      <th>Primer Apellido</th>
+                      <th>Segundo Apellido</th>
+                      <th>Telefono</th>
+                      <th>Nombre Finca</th>
+                      <th>Capacidad Finca</th>
+                      <th>Inicio Siembra</th>
+                    </tr>
+
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1065165985</td>
+                      <td>Juan</td>
+                      <td>Andres</td>
+                      <td>Perez</td>
+                      <td>Martinez</td>
+                      <td>3002536598</td>
+                      <td>La Bonita</td>
+                      <td>10 Hectareas</td>
+                      <td>23/04/2010</td>
+                    </tr>
+                    <tr>
+                      <td>1065164485</td>
+                      <td>Luis</td>
+                      <td>Manuel</td>
+                      <td>Vargas</td>
+                      <td>Segura</td>
+                      <td>3004866511</td>
+                      <td>La Maria</td>
+                      <td>5 Hectareas</td>
+                      <td>05/08/2012</td>
+                    </tr>
+                    <tr>
+                      <td>1065145985</td>
+                      <td>Julian</td>
+                      <td>Jose</td>
+                      <td>Molina</td>
+                      <td>Herrera</td>
+                      <td>3002546598</td>
+                      <td>Patillal</td>
+                      <td>10 Hectareas</td>
+                      <td>20/05/2011</td>
+                    </tr>
+
+
+
+                  </tbody>
+
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
 
 </body>
+
 </html>

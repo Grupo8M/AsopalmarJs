@@ -1,0 +1,127 @@
+
+
+:root {
+    --dark: #16191C;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+    --green-x: #8dd044
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.text-light { color: var(--light) !important;}
+.bg-dark { background-color: var(--light) !important; }
+.bg-dark-x { background-color: var(--light); }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8dd044;
+    border-color: #8dd044;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000000;
+
+}
+
+.btn-primary:active {
+    color: #fff;
+    background-color: #289213;
+    border-color: #8dd044;
+
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1rem;
+    left: 15%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    text-shadow: #000000;
+    background: rgba(0, 0, 0, 0.644);
+}
+
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--light);
+    outline-style: normal;
+}
+
+.img-1 {
+    background-image: url('../img/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #100901;
+    transition: 0.5s;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 250px;
+  }
+  
+  #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  }
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }

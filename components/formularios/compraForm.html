@@ -1,130 +1,365 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Compras</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compras</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!--link rel="stylesheet" href=".../css/estilos.css"-->
+  <link rel="stylesheet" href="../../css/formstyle.css">
+  <!-- BOX ICONS CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 <body>
 
-<header>
-<h1>MODULO COMPRAS</h1>
-</header>
+  <header>
 
-<form action="/">
-    <fieldset>
-     <legend>Datos Comprador:</legend>
-     <label for="NumCompra">Numero de Compra:</label>
-      <input type="number" id="NumCompra" name="NumCompra" disabled value="">
-      <label for="TipoDoc">Ingrese Documento:</label>
-      <select id="TipoDoc" name="TipoDoc">
-       <option value="CC">CC</option>
-       <option value="CE">CE</option>
-       <option value="AS">AS</option>
-       <option value="PE">PE</option>
-      </select>
-       <input type="number" id="NumDoc" name="NumDoc" value="">
-       <input type="button" value="...">
-    <label for="FechaCompra">FechaCompra</label>:</label>
-    <input type="datetime-local" id="FechaCompra" name="FechaCompra" value=""><br><br>
-    <label for="PNombre">Primer Nombre:</label>
-    <input type="text" id="PNombre" name="PNombre" value="">
-    <label for="SNombre">Segundo Nombre:</label>
-    <input type="text" id="SNombre" name="SNombre" value="">
-    <label for="PApellido">Primer Apellido:</label>
-    <input type="text" id="PApellido" name="PApellido" value="">
-    <label for="SApellido">Segundo Apellido:</label>
-    <input type="text" id="SApellido" name="SApellido" value=""><br><br>
-    
-    <fieldset>
-        <legend>Datos Compra:</legend>
-    <label for="CodInsumo">Codigo Insumo:</label>
-       <input type="number" id="CodInsumo" name="CodInsumo" value="">
-       <input type="button" value="...">
-    <label for="NomProducto">Descripcion:</label>
-    <input type="text" id="NomProducto" name="NomProducto" value="">
-    <label for="CantProducto">Cantidad:</label>
-    <input type="number" id="CantProducto" name="CantProducto" value="">
-    <label for="ValorInsumo">Valor Insumo:</label>
-    <input type="number" id="ValorInsumo" name="ValorInsumo" value="" disabled>
-    <br><br>
-    <label for="CodInsumo">Codigo Insumo:</label>
-       <input type="number" id="CodInsumo" name="CodInsumo" value="">
-       <input type="button" value="...">
-    <label for="NomProducto">Descripcion:</label>
-    <input type="text" id="NomProducto" name="NomProducto" value="">
-    <label for="CantProducto">Cantidad:</label>
-    <input type="number" id="CantProducto" name="CantProducto" value="">
-    <label for="ValorInsumo">Valor Insumo:</label>
-    <input type="number" id="ValorInsumo" name="ValorInsumo" value="" disabled>
-    <br><br>
-    <label for="CodInsumo">Codigo Insumo:</label>
-       <input type="number" id="CodInsumo" name="CodInsumo" value="">
-       <input type="button" value="...">
-    <label for="NomProducto">Descripcion:</label>
-    <input type="text" id="NomProducto" name="NomProducto" value="">
-    <label for="CantProducto">Cantidad:</label>
-    <input type="number" id="CantProducto" name="CantProducto" value="">
-    <label for="ValorInsumo">Valor Insumo:</label>
-    <input type="number" id="ValorInsumo" name="ValorInsumo" value="" disabled>
-    <input type="button" value="+"><br><br>
-    <label for="ValorTotal ">Valor Total Insumos:</label>
-    <input type="number" id="ValorTotal" name="ValorTotal" value="" disabled><br>
 
-    </fieldset><br>
+    <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-6">
+              <h1 class="m-0">
+                <i class='bx bxs-cart-add'></i>
+                Modulo Compras
+              </h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item active">Compras</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+    </div>
 
-      </fieldset><br>
-      
-      <input type="button" value="Nuevo">
-      <input type="button" value="Guardar">
-      <input type="button" value="Modificar">
-      <input type="button" value="Buscar">
-      <input type="button" value="Eliminar">
-      <input type="button" value="Imprimir"/> 
-      <input type="reset" value="Limpiar"/>  
-  </form>
-  <br>
 
-  <fieldset>
-    <legend>Listado de Compras:</legend>
-    <br>
-    <table style="width:100%">
-    <label for="lblBuscarCompra">Buscar Compra:</label>
-    <input type="search" id="lblBuscarCompra" name="lblBuscarCompra" value="">
-    <label for="lblBuscarDoc">Buscar Comprador:</label>
-    <input type="search" id="lblBuscarDoc" name="lblBuscarDoc" value=""><br> <br>
-        <tr>
-          <th>Numero Compra</th>
-          <th>Numero Identificacion</th>
-          <th>Primer Nombre</th>
-          <th>Segundo Nombre</th>
-          <th>Primer Apellido</th>
-          <th>Segundo Apellido</th>
-          <th>Valor Compra</th>
-          <th>Fecha Compra</th>
-        </tr>
-        <tr>
-          <td>5525</td>  
-          <td>1065165985</td>
-          <td>Juan</td>
-          <td>Andres</td>
-          <td>Perez</td>
-          <td>Martinez</td>
-          <td>$584.000</td>
-          <td>28/06/2021</td>
-        </tr>
-        <tr>
-          <td>5526</td>  
-          <td>1065164485</td>
-          <td>Luis</td>
-          <td>Manuel</td>
-          <td>Vargas</td>
-          <td>Segura</td>
-          <td>$224.000</td>
-          <td>29/06/2021</td>
-        </tr>
-      </table>
+  </header>
+
+
+
+  <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <fieldset class="scheduler-border">
+      <legend>Datos Comprador:</legend>
+      <form class="row g-3">
+        <div class="mb-3 col-2">
+          <label for="NumCompra" class="form-label">N° de Compra</label>
+          <input type="number" class="form-control mb-2" id="NumCompra" disabled>
+        </div>
+        <div class="mb-3 col-2">
+          <label for="FechaCompra" class="form-label">Fecha de Compra</label>
+          <input type="date" class="form-control mb-2" id="FechaCompra">
+        </div>
+      </form>
+      <form class="row g-3">
+        <div class="mb-3 col-1">
+          <label for="exampleInputEmail1" class="form-label">Tipo Doc</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected> Seleccione Tipo Id</option>
+            <option value="1">CC</option>
+            <option value="2">CE</option>
+            <option value="3">AS</option>
+            <option value="4">PE</option>
+          </select>
+        </div>
+        <div class="mb-3 col-2">
+          <label for="IdDocumento" class="form-label">N° Identificacion</label>
+          <div class="input-group mb-2">
+            <input type="number" class="form-control  id=" IdUsuario placeholder="Ingrese Numero de Documento">
+            <span class="input-group-btn">
+              <button id="autocargar" class="btn btn-dark" type="button">
+                ...
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="mb-3 col-2">
+          <label for="PNombre" class="form-label">Primer Nombre</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Primer Nombre" id="PNombre">
+        </div>
+        <div class="mb-3 col-2">
+          <label for="SNombre" class="form-label">Segundo Nombre</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Segundo Nombre" id="SNombre">
+        </div>
+        <div class="mb-3 col-2">
+          <label for="PApellido" class="form-label">Primer Apellido</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Primer Apellido" id="PApellido">
+        </div>
+        <div class="mb-3 col-2">
+          <label for="SApellido" class="form-label">Segundo Apellido</label>
+          <input type="text" class="form-control mb-2" placeholder="Ingrese Segundo Apellido" id="SApellido">
+        </div>
+      </form>
+      </form>
     </fieldset>
+    <fieldset class="scheduler-border">
+      <legend class="scheduler-border">Datos Compra:</legend>
+      <div class="row g-3">
+        <div class="mb-1 col-auto">
+          <label for="CodInsumo" class="form-label">Codigo de Insumo</label>
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="CodInsumo" placeholder="Ingrese Codigo de Insumo">
+            <span class="input-group-btn">
+              <button id="autocargar" class="btn btn-dark" type="button">
+                ...
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="mb-1 col-4">
+          <label for="IdDocumento" class="form-label">Descripcion</label>
+          <input type="text" class="form-control" id="IdDocumento">
+        </div>
+        <div class="mb-1 col-1">
+          <label for="CantProducto" class="form-label">Cantidad</label>
+          <input type="number" class="form-control" placeholder="" id="CantProducto">
+        </div>
+        <div class="mb-1 col-2">
+          <label for="ValorProducto" class="form-label">Valor Insumo</label>
+          <input type="number" class="form-control" placeholder="" id="ValorProducto">
+        </div>
+      </div>
+
+
+      <div class="row g-3">
+        <div class="mb-1 col-auto">
+          <label for="CodInsumo" class="form-label">Codigo de Insumo</label>
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="CodInsumo" placeholder="Ingrese Codigo de Insumo">
+            <span class="input-group-btn">
+              <button id="autocargar" class="btn btn-dark" type="button">
+                ...
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="mb-1 col-4">
+          <label for="IdDocumento" class="form-label">Descripcion</label>
+          <input type="text" class="form-control" id="IdDocumento">
+        </div>
+        <div class="mb-1 col-1">
+          <label for="CantProducto" class="form-label">Cantidad</label>
+          <input type="number" class="form-control" placeholder="" id="CantProducto">
+        </div>
+        <div class="mb-1 col-2">
+          <label for="ValorProducto" class="form-label">Valor Insumo</label>
+          <input type="number" class="form-control" placeholder="" id="ValorProducto">
+        </div>
+      </div>
+
+
+      <div class="row g-3">
+        <div class="mb-1 col-auto">
+          <label for="CodInsumo" class="form-label">Codigo de Insumo</label>
+          <div class="input-group mb-2">
+            <input type="number" class="form-control" id="CodInsumo" placeholder="Ingrese Codigo de Insumo">
+            <span class="input-group-btn">
+              <button id="autocargar" class="btn btn-dark" type="button">
+                ...
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="mb-1 col-4">
+          <label for="IdDocumento" class="form-label">Descripcion</label>
+          <input type="text" class="form-control" id="IdDocumento">
+        </div>
+        <div class="mb-1 col-1">
+          <label for="CantProducto" class="form-label">Cantidad</label>
+          <input type="number" class="form-control" placeholder="" id="CantProducto">
+        </div>
+        <div class="mb-1 col-2">
+          <label for="ValorProducto" class="form-label">Valor Insumo</label>
+          <input type="number" class="form-control" placeholder="" id="ValorProducto">
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-auto">
+          <button type="button" class="btn btn-dark">Agregar Insumo</button>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-dark">Eliminar Insumo</button>
+        </div>
+      </div>
+      <br>
+      <div class="row g-3">
+        <div class="mb-1 col-2">
+          <label for="TotCompra" class="form-label">Valor Total Compra</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="disabled" class="form-control" id="TotCompra" aria-label="Amount (to the nearest dollar)"
+              disabled>
+            <span class="input-group-text">.00</span>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+
+
+
+    <br>
+    <form class="row g-2">
+      <div class="col-auto">
+        <button type="button" onclick='nuevo()' class="btn btn-primary">Nuevo</button>        
+        <script>
+          function nuevo() {
+            alert("Ingresar registro");
+          }
+          </script>
+
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='guardar()' class="btn btn-primary">Guardar</button>
+        <script>
+          function guardar() {
+            alert("Guardar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='modificar()' class="btn btn-primary">Modificar</button>
+        <script>
+          function modificar() {
+            alert("Modificar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='buscar()' class="btn btn-primary">Buscar</button>
+        <script>
+          function buscar() {
+            alert("Buscar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='eliminar()' class="btn btn-primary">Eliminar</button>
+        <script>
+          function eliminar() {
+            alert("Eliminar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='myFunction()' class="btn btn-primary">Limpiar</button>
+        <script>
+          function myFunction() {
+            alert("Limpiar registro");
+          }
+          </script>
+      </div>
+    </form>
+
+
+    <br>
+
+
+
+    <br>
+
+    <fieldset class="scheduler-border"><br>
+    <div class="row g-2">
+      <div class="mb-1 col-4">
+        <div class="input-group mb-3">
+          <button class="btn btn-primary" type="button" id="button-addon1"><i class='bx bx-search'></i></button>
+          <input type="text" class="form-control" placeholder="Busqueda por N° de Compra">
+        </div>
+      </div>
+      <div class="mb-1 col-4">
+        <div class="input-group mb-3">
+          <button class="btn btn-primary" type="button" id="button-addonaddon1"><i class='bx bx-search'></i></button>
+          <input type="text" class="form-control" placeholder="Busqueda por N° de Identificacion">
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <div class="card">
+          <div class="card-header">
+            <span><i class='bx bxs-cart-add'></i></span> Listado de Compras
+          </div>
+          <div class="card-body">
+
+            <div class="table-responsive">
+              <table id="example" class="table table-striped data-table" style="width: 100%">
+                <thead>
+                  <tr>
+                    <th>Numero Compra</th>
+                    <th>Numero Identificacion</th>
+                    <th>Primer Nombre</th>
+                    <th>Segundo Nombre</th>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                    <th>Valor Compra</th>
+                    <th>Fecha Compra</th>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>5525</td>
+                    <td>1065165985</td>
+                    <td>Juan</td>
+                    <td>Andres</td>
+                    <td>Perez</td>
+                    <td>Martinez</td>
+                    <td>$584.000</td>
+                    <td>28/06/2021</td>
+                  </tr>
+                  <tr>
+                    <td>5526</td>
+                    <td>1065164485</td>
+                    <td>Luis</td>
+                    <td>Manuel</td>
+                    <td>Vargas</td>
+                    <td>Segura</td>
+                    <td>$224.000</td>
+                    <td>29/06/2021</td>
+                  </tr>
+                  <tr>
+                    <td>5527</td>
+                    <td>1065145985</td>
+                    <td>Julian</td>
+                    <td>Jose</td>
+                    <td>Molina</td>
+                    <td>Herrera</td>
+                    <td>$325.000</td>
+                    <td>14/08/2021</td>
+                  </tr>
+
+
+
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+
+  </div>
+  <!--Div align-self-center w-100 px-lg-5 py-lg-4 p- -->
 
 </body>
+
 </html>

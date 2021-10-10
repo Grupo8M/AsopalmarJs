@@ -1,27 +1,6 @@
 *{
   margin: 0%;}
 
-.vertical-menu {
-  width: 200px;
-}
-
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-
-.vertical-menu a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
   .img {
     position: absolute;
     left: 300px;
@@ -30,24 +9,27 @@
     float: right;
     top:70px;
   }
+
+.hola{
+  color: blue;
+  background-color: chartreuse;
+}
+
+  
 .formularios{
     position: absolute;
     right: 20px;
-    width: 1200px;
-    border: 3px solid #73AD21;
+    width: 1300px;
     padding-top: 5px;
     float: right;
     top:70px;
-  
 }
 
-.formularios_c{
-  position: absolute;
-  right: 20px;
-  width: 1200px;
-  border: 3px solid #73AD21;
+.formularios-c{
+  position: relative;
+   width: 90%;
   padding-top: 5px;
-  float: right;
+  float: center;
   top:70px;
 }
 
@@ -119,9 +101,9 @@ align-content: center;
 .card{
 height: 550px;
 margin-top: 120px;
-margin-left: 300px;
+margin-left: 355px;
 width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
+background-color: rgba(0, 0, 0, 0.562) !important;
 }
 
 .social_icon span{
@@ -147,7 +129,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
+background-color:rgb(206, 60, 70);
 color: black;
 border:0 !important;
 }
@@ -172,7 +154,8 @@ margin-right: 5px;
 
 .form-group a{
 color: black;
-background-color: #FFC312;
+float: right;
+background-color: rgb(206, 60, 70);
 width: 100px;
 }
 
@@ -188,5 +171,61 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+.card-footer a {
+  color: rgb(142, 209, 70);
+}
+
+    .left {
+        background: rgb(142,209, 70);  
+        display: inline-block;
+        white-space: nowrap;
+        width: 50px;
+        transition: width .5s;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    .right {
+        background: #fff;
+        width: 200px;
+        transition: width 1s;
+        border-style: solid;
+        border-color: #ccc;
+        border-width: 1px;
+    }
+
+    .left:hover {
+        width: 250px;
+    }
+
+    .item:hover {
+        background-color: rgb(45,44,44);
+    }
+
+    .left .fas {
+        margin: 15px;
+        width: 20px;
+        color: #fff;
+    }
+
+    i.fas {
+        font-size: 17px;
+        vertical-align: middle !important;
+        
+    }
+
+    .item {
+        height: 50px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+.left a{
+  color:white;
+}
+
+ .calcular{
+   float :left;
+ }
 
  

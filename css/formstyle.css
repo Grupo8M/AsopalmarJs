@@ -1,0 +1,211 @@
+
+
+:root {
+    --dark: #16191C;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+    --green-x: #8dd044
+}
+
+.h1, h1 {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #8dd044;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.text-light { color: var(--light) !important;}
+.bg-dark { background-color: var(--light) !important; }
+.bg-dark-x { background-color: var(--light); }
+
+.btn {
+    min-height: 2.125rem;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-primary {
+    outline: none;
+    color: #fff;
+    background-color: #8dd044;
+    border-color: #8dd044;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #212529;
+    border: 1px solid #8dd044;
+    border-radius: .25rem;
+}
+
+.form-control:disabled, .form-control[readonly] {
+	background-color: #fff;
+	opacity: 1;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #8dd044;
+    transform: translateY(4px);
+
+}
+
+.btn-primary:active {
+    color: #fff;
+    background-color: #289213;
+    border-color: #8dd044;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+
+.btn-primary:focus {
+    outline: none;
+    color: #fff;
+    background-color: #000000;
+    transform: translateY(4px);
+    
+}
+
+.form-control {
+    min-height: 2.125rem;
+    line-height: initial;
+    font-size: 13px;
+}
+
+.form-label{
+    font-size: 15px;
+
+}
+
+.form-select{
+    min-height: 2.125rem;
+    line-height: initial;
+    font-size: 13px;
+}
+
+.form-control:focus {
+    background-color: #ececec96;
+    border-color: #8dd044;
+    outline-style: solid;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #fff;
+  }
+
+   .card-header {
+       background-color:#000000;
+       color: white;
+       border-color:#8dd044;
+       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+   }
+
+   .card-body {
+       border-color:#000000 !important;
+       padding:0px;
+       background-color:#d3d3d323;
+       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+   }
+
+
+   table {
+    border-color:#000000 !important;
+    border: 1px solid black;
+   }
+
+   tr{
+    background-color:#d6d6d6e7;
+    border-color:#000000 !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+    border: 1px solid rgb(255, 255, 255);
+
+   }
+
+  th{
+      font-size:14px;
+      background-color:#8dd044 !important;
+      border-color:#000000 !important;
+      color:#fff;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+      border: 1px solid black;
+      
+  }
+
+  td{
+    display: table-cell;
+    font-size:14px;
+    font-weight: 400;
+    border-color: #8d8d8dbd;
+    background-color: rgb(163, 163, 163);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+    border: 1px solid black;
+
+
+  }
+  
+  .navbar {
+    color: #fff;
+    background-color: #000000;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+  .bg-light {
+    background-color: #00000073!important;
+    color: white;
+
+    
+}
+
+fieldset.scheduler-border {
+    border: 1px groove rgba(192, 192, 192, 0.452) !important;
+    padding: 0 1em 1em 1em !important;
+    margin: 0 0 0em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}

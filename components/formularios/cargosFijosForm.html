@@ -1,70 +1,186 @@
-<header>
-    <h1>MODULO CARGOS FIJOS</h1>
-    </header>
+<!DOCTYPE html>
+<html>
 
-<form method="POST" action="#" target="_blank" action="/">
-    <fieldset>
-        <legend> Cargos Fijos:: </legend>
-            <label for="id_trans">Número de Transacción</label>
-            <input type="number" name="id_trans" id="id_trans"> <br><br>
-            <label for="ab_gerente">Abono Gerente</label>
-            <input type="number" name="ab_gerente" id="ab_gerente">
-            <label for="ab_contador">Abono Contador</label>
-            <input type="number" name="ab_contador" id="ab_contador">
-            <label for="ab_mensual">Abono Mensual</label>
-            <input type="number" name="ab_mensual" id="ab_mensual">
-            <label for="ab_asesoria">Abono Asesoria</label>
-            <input type="number" name="ab_asesoria" id="ab_asesoria"><br> <br>
-            <label for="ab_sanidad">Abono Sanidad</label> 
-            <input type="number" name="ab_sanidad" id="ab_sanidad">
-            <label for="retefuente">Retefuente</label>
-            <input type="number" name="retefuente" id="retefuente">
-            <label for="cheque">Descuento Cheque</label>
-            <input type="number" name="cheque" id="cheque">
-            <label for="cxmil">Cuatro por Mil</label>
-            <input type="number" name="cxmil" id="cxmil">
-    <br>        <br>
-    
+<head>
+  <title>Cargos fijos form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-</fieldset>
-    <br>
-    <input type="button" value="Nuevo">
-    <input type="button" value="Guardar">
-    <input type="button" value="Modificar">
-    <input type="button" value="Buscar">
-    <input type="button" value="Eliminar">
-    <input type="reset" value="Limpiar"/>  
-    <br><br>
-    <fieldset>
-        <legend>Cargos fijos:</legend>
-        <br>
-        <table style="width:100%">
-        <label for="lblBuscar">Numero de Transaccion:</label>
-        <input type="search" id="lblBuscar" name="lblBuscar" value=""><br> <br>
-            <tr>
-              <th>Abono gerente</th>
-              <th>Abono contador</th>
-              <th>Abono mensual</th>
-              <th>Abono asesoría</th>
-              <th>Abono sanidad</th>
-              <th>Retefuente</th>
-              <th>Descuento cheque</th>
-              <th>4 x 1000</th>
-            </tr>
-            <tr>
-             
-              <td>16000</td>
-              <td>13000</td>
-              <td>5%</td>
-              <td>20000</td>
-              <td>3002536598</td>
-              <td>30000</td>
-              <td>6000</td>
-              <td>1*100</td>
-            </tr>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../css/formstyle.css">
+  </link>
+</head>
+
+<body>
+
+  <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <h1 class="font-weight-bold mb-4">Modulo cargos fijos</h1>
+    <form class="row g-2">
+      <div class="mb-3 col-auto">
+        <label for="id_transaccion" class="form-label">Numero de transaccion</label>
+        <input type="text" class="form-control" id="id_transaccion" placeholder="numero de transaccion">
+      </div>
+      <div class="mb-3 col-auto">
+        <label for="gerente" class="form-label">Abono gerente</label>
+        <input type="number" class="form-control mb-2" id="gerente">
+      </div>
+      <div class="mb-3 col-auto">
+        <label for="contador" class="form-label">Abono contador</label>
+        <input type="number" class="form-control mb-2" id="contador">
+      </div>
+      <div class="mb-3 col-auto">
+        <label for="mensual" class="form-label">Abono Mensual</label>
+        <input type="number" class="form-control mb-2" id="mensual">
+      </div>
+      <div class="mb-3 col-auto">
+        <label for="asesoria" class="form-label">Abono asesoria</label>
+        <input type="number" class="form-control mb-2" id="SApellido">
+      </div>
+      <div class="mb-3 col-3">
+        <label for="sanidad" class="form-label">Abono sanidad</label>
+        <input type="number" class="form-control mb-2" id="sanidad">
+      </div>
+      <div class="mb-3 col-3">
+        <label for="retefuente" class="form-label">Retefuente</label>
+        <input type="number" class="form-control mb-2" id="retefuente">
+      </div>
+      <div class="mb-3 col-3">
+        <label for="cheque" class="form-label">Descuento cheque</label>
+        <input type="number" class="form-control mb-2" id="cheque">
+      </div>
+      <div class="mb-3 col-3">
+        <label for="cxmil" class="form-label">Cuatro x mil</label>
+        <input type="number" class="form-control mb-2" id="cxmil">
+      </div>
+
+    </form>
+
+    <form class="row g-2">
+      <div class="col-auto">
+        <button type="button" onclick='nuevo()' class="btn btn-primary">Nuevo</button>        
+        <script>
+          function nuevo() {
+            alert("Ingresar registro");
+          }
+          </script>
+
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='guardar()' class="btn btn-primary">Guardar</button>
+        <script>
+          function guardar() {
+            alert("Guardar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='modificar()' class="btn btn-primary">Modificar</button>
+        <script>
+          function modificar() {
+            alert("Modificar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='buscar()' class="btn btn-primary">Buscar</button>
+        <script>
+          function buscar() {
+            alert("Buscar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='eliminar()' class="btn btn-primary">Eliminar</button>
+        <script>
+          function eliminar() {
+            alert("Eliminar registro");
+          }
+          </script>
+      </div>
+      <div class="col-auto">
+        <button type="button" onclick='myFunction()' class="btn btn-primary">Limpiar</button>
+        <script>
+          function myFunction() {
+            alert("Limpiar registro");
+          }
+          </script>
+      </div>
+    </form>
+</body>
+
+<br>
+
+<div class="row">
+  <div class="col-md-12 mb-3">
+    <div class="card">
+      <div class="card-header">
+        <span><i class="bi bi-table me-2"></i></span> Transacciones
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table id="example" class="table table-striped data-table" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Numero transaccion</th>
+                <th>Abono gerente</th>
+                <th>Abono contador</th>
+                <th>Abono mensual</th>
+                <th>Abono asesoría</th>
+                <th>Abono sanidad</th>
+                <th>Abono retefuente</th>
+                <th>Cheque</th>
+                <th>Cuatro por mil</th>
+              </tr>
+
+            </thead>
+            <tbody>
+              <tr>
+                <td>C001</td>
+                <td>1231332</td>
+                <td>143242</td>
+                <td>4534</td>
+                <td>454</td>
+                <td>4546</td>
+                <td>46456</td>
+                <td>6000</td>
+                <td>453453</td>
+              </tr>
+              <tr>
+                <td>C002</td>
+                <td>4454</td>
+                <td>4565</td>
+                <td>5645</td>
+                <td>56765</td>
+                <td>233</td>
+                <td>4556</td>
+                <td>6000</td>
+                <td>434</td>
+              </tr>
+              <tr>
+                <td>C003</td>
+                <td>4543</td>
+                <td>454</td>
+                <td>56567</td>
+                <td>565</td>
+                <td>4543</td>
+                <td>446</td>
+                <td>6000</td>
+                <td>33434</td>
+              </tr>
+
+
+
+            </tbody>
+
           </table>
-        </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-</form>
+</html>

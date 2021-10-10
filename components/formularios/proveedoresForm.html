@@ -1,98 +1,233 @@
-<!Doctype html>
-<html lang="es">
-    <head>
-        <meta http-equiv="Contend-Type" content="text/html;charset=UFT-8">
-        <meta name="keywords" content="palma, Aspalmar">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Provedores</title>
-    </head>
-    <body>
-    <header>
-        <h1>MODULO PROVEDORES</h1>
-    </header>
-        <form action="/">
-           <fieldset>
-                <legend>Datos Provedor:</legend>
-                <label for="TipoNit">Ingrese Referencia:</label>
-                <select id="TipoNit" name="TipoNit">
-                    <option value="SEL">Seleccione...</option>
-                    <option value="CC">Cedula Ciudadania</option>
-                    <option value="NIT">Nit</option>
-                    <option value="COD">Código</option>
-                </select>
-                <input type="number" id="TipoNit" name="TipoNit" value="">
-                <input type="button" value="Consultar">  <br><br>
-                <label for="Nombre">Nombre o Razón Social:</label>
-                <input type="text" id="Nombre" name="Nombre" value="">
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" value="">
-                <label for="NumTelefono1">Teléfono 1:</label>
-                <input type="number" id="NumTelefono1" name="NumTelefono1" value="">
-                <label for="NumTelefono2">Teléfono 2:</label>
-                <input type="number" id="NumTelefono2" name="NumTelefono2" value=""><br><br>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" value="">
-                <label for="ciudad">Ciudad:</label>
-                <input type="text" id="ciudad" name="ciudad" value="">
-                <label for="Producto">Tipo Comercio:</label>
-                <select id="Producto" name="Producto">
-                    <option value="SEL">Seleccione...</option>
-                    <option value="PAQ">Productos Agro Químicos</option>
-                    <option value="CAR">Productos Mecanicos</option>
-                    <option value="CAR">Productos Carnicos</option>
-                    <option value="VER">Productos Supermercado</option>
-                </select>
-            </fieldset>  
-            <br><br>          
-            <input type="reset" value="Nuevo">
-            <input type="button" value="Crear">
-            <input type="button" value="Modificar">
-            <input type="button" value="Eliminar">  
-        </form>
-        <br><br>
-    <fieldset>
-       <form action="/">
-        <legend>Listado de Provedores:</legend>
-        <br>
-        <table style="width:100%">
-            <label for="lblBuscar">Buscar Referencia:</label>
-            <input type="search" id="lblBuscar" name="lblBuscar" value="">
-            <input type="button" value="Consultar">
-            <input type="reset" value="Limpiar"><br> <br>
-            <tr>
-                <th>Numero Referencia</th>
-                <th>Nombre o Razón Social</th>
-                <th>Dirección</th>
-                <th>Email</th>
-                <th>Telefono 1</th>
-                <th>Telefono 2</th>
-                <th>Ciudad</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td><mark>830458960</mark></td>
-                <td><mark>AgroCampo SA</mark></td>
-                <td><mark>Calle 23 # 12 - 45</mark></td>
-                <td><mark>servicioalcliente@agrocampo.com</mark></td>
-                <td><mark>6078569513</mark></td>
-                <td><mark>3002536598</mark></td>
-                <td><mark>La Tebaida</mark></td>
-                <td><mark>Productos Agro Químicos</mark></td>
-            </tr>
-            <tr>
-                <td><mark>1065164485</mark></td>
-                <td><mark>Luis Vargas</mark></td>
-                <td><mark>Calle 1 # 11 - 10</mark></td>
-                <td><mark>@gmail.com</mark></td>
-                <td><mark>6092546321</mark></td>
-                <td><mark>3204866556</mark></td>
-                <td><mark>San Martin</mark></td>
-                <td><mark>Productos Carnicos</mark></td>
-            </tr>
-        </table>
-      </form>
-    </fieldset>
-    <br><br><hr>
-    <p title="Regresa a Menu Principal"><input type="submit" value="VOLVER"></p>   
-  </body>
-</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Provedores</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!--link rel="stylesheet" href=".../css/estilos.css"--> 
+<link rel="stylesheet" href="../../css/formstyle.css">
+<!-- BOX ICONS CSS-->
+<link
+href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+rel="stylesheet"
+/>
+</head>
+
+<header>
+
+    <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-6">
+            <h1 class="m-0">
+              <i class="bx bx-user-check"></i>
+              Modulo Provedores
+            </h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+ 
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+  
+  </header>
+
+  <body>
+    <div
+    class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
+    id="sidebar">
+    
+    </div>
+    
+      <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+      <form class="row g-2">
+          <div class="mb-3 col-auto">
+            <label for="IdVerificacion" class="form-label">Referencia:</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected> Selec...</option>
+              <option value="1">CC</option>
+              <option value="2">NIT</option>
+              <option value="3">ID</option>
+            </select>
+          </div>
+          <div class="mb-8 col-3">
+            <label for="IdEmpresa" class="form-label">Numero de Referencia:</label>
+            <input type="number" class="form-control mb-2"  id="IdEmpresa" placeholder="Ingrese Referencia">
+          </div>
+          <div class="col-3">
+              <label for="Formulario" class="form-label"><br><br><br></label>
+            <button type="button" class="btn btn-primary">Consultar</button>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="NombreEmpresa" class="form-label">Nombre o Razón Social:</label>
+            <input type="text" class="form-control mb-2" id="NombreEmpresa" placeholder="Ingrese Información">
+          </div>
+          <div class="mb-3 col-2">
+            <label for="direccion" class="form-label">Dirección:</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese Dirección" id="direccion">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="Telefono1" class="form-label">Telefono 1:</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese # Telefonico" id="NumTelefono1">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="Telefono2" class="form-label">Telefono 2:</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese # Telefonico" id="NumTelefono2">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="email" class="form-label">Correo Electrónico:</label>
+            <input type="email" class="form-control mb-2" placeholder="Ingrese Email" id="email">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="Ciudad" class="form-label">Ciudad:</label>
+            <input type="text" class="form-control mb-2" placeholder="Ingrese Ciudad" id="Ciudad">
+          </div>
+          <div class="mb-3 col-3">
+                  <label for="Tcomercio" class="form-label">Tipo Comercio:</label>
+                  <select class="form-select" aria-label="Default select example" value="valor">
+                    <option selected> Seleccione...</option>
+                    <option value="1">Productos Agro Químicos</option>
+                    <option value="2">Productos Mecanicos</option>
+                    <option value="3">Productos Carnicos</option>
+                    <option value="4">Productos Supermercado</option>
+                  </select>
+                </div>
+    
+            </form>
+
+            <form class="row g-2">
+              <div class="col-auto">
+                <button type="button" onclick='nuevo()' class="btn btn-primary">Nuevo</button>        
+                <script>
+                  function nuevo() {
+                    alert("Ingresar registro");
+                  }
+                  </script>
+        
+              </div>
+              <div class="col-auto">
+                <button type="button" onclick='guardar()' class="btn btn-primary">Guardar</button>
+                <script>
+                  function guardar() {
+                    alert("Guardar registro");
+                  }
+                  </script>
+              </div>
+              <div class="col-auto">
+                <button type="button" onclick='modificar()' class="btn btn-primary">Modificar</button>
+                <script>
+                  function modificar() {
+                    alert("Modificar registro");
+                  }
+                  </script>
+              </div>
+              <div class="col-auto">
+                <button type="button" onclick='buscar()' class="btn btn-primary">Buscar</button>
+                <script>
+                  function buscar() {
+                    alert("Buscar registro");
+                  }
+                  </script>
+              </div>
+              <div class="col-auto">
+                <button type="button" onclick='eliminar()' class="btn btn-primary">Eliminar</button>
+                <script>
+                  function eliminar() {
+                    alert("Eliminar registro");
+                  }
+                  </script>
+              </div>
+              <div class="col-auto">
+                <button type="button" onclick='myFunction()' class="btn btn-primary">Limpiar</button>
+                <script>
+                  function myFunction() {
+                    alert("Limpiar registro");
+                  }
+                  </script>
+              </div>
+            </form>
+      <br>
+      
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <div class="card">
+            <div class="card-header">
+              <span>   <i class="bx bx-user-check"></i></span> Listado Provedores
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  id="exampleProvedores"
+                  class="table table-striped data-table"
+                  style="width: 100%"
+                >
+                  <thead>
+                    <tr>
+                      <th>Numero Referencia</th>
+                      <th>Nombre o Razón Social</th>
+                      <th>Dirección</th>
+                      <th>Email</th>
+                      <th>Telefono 1</th>
+                      <th>Telefono 2</th>
+                      <th>Ciudad</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>830458960</td>
+                      <td>AgroCampo SA</td>
+                      <td>Calle 23 # 12 - 45</td>
+                      <td>servicioalcliente@agrocampo.com</td>
+                      <td>6078569513</td>
+                      <td>3002536598</td>
+                      <td>La Tebaida</td>
+                      <td>Productos Agro Químicos</td>
+                    </tr>
+                    <tr>
+                      <td>1065164485</td>
+                      <td>Luis Manuel Vargas</td>
+                      <td>Calle 1 N. 12-15</td>
+                      <td>lVargas_25@gmal.com</td>
+                      <td>3216984521</td>
+                      <td>3054869511</td>
+                      <td>San Juan del Cesar</td>
+                      <td>Productos Carnicos</td>
+                    </tr>
+                    <tr>
+                      <td>1065145985</td>
+                      <td>Fruver La Feria Campesina</td>
+                      <td>Calle 1 # 11 - 10</td>
+                      <td>fcgerencia@gmail.com</td>
+                      <td>6092546321</td>
+                      <td>3204866556</td>
+                      <td>Patillal</td>
+                      <td>Productos Supermercado</td>
+                    </tr>  
+                  </tbody>
+              
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </body>
+        
+      </html>
+                
+                
+            
+    
